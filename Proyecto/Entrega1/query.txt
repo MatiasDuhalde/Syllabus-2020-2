@@ -1,0 +1,29 @@
+-- this is an example
+group: EnoTours 
+
+Tours = {
+tid:number, nombre:string, duracion:number, precio:number
+1, 'Quinta', 4, 15000
+2, 'Quinta lujo', 5, 25000
+3, 'Chile premium', 48, 109999
+4, 'Vinos del Mar', 12, 58000
+}
+
+Vinas = {
+vid:number, nombre:string, region:string
+1, 'Casas del Bosque', 'V'
+2, 'Vina VIK', 'X'
+3, 'Koyle', 'X'
+4, 'Matetic', 'V'
+}
+
+SeVisita = {
+sid:number, tid:number, vid:number, degustacion:string
+1, 2, 1, 'basica'
+2, 1, 4, 'premium'
+3, 4, 3, 'premium'
+4, 4, 3, 'premium'
+5, 3, 5, 'basica'
+6, 3, 2, 'basica'
+7, 4, 3, 'premium'
+}
