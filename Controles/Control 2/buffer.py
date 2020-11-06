@@ -33,9 +33,15 @@ class Buffer:
             self.evict_page(to_evict)
             #return
 
-        # Get the content of pname from the disk
-        newPage = Page(pname)
-        newPage.read_from_disk()
+		# Arreglo parche
+		if self.frames[self.clock_pos]:
+			to_evict = self.frames[self.clock_pos].pname
+			self.evict_page(to_evict)
+
+
+		# Get the content of pname from the disk
+		newPage = Page(pname)
+		newPage.read_from_disk()
 
         # Insert into frames; we made space above
         self.frames[self.clock_pos] = newPage
@@ -92,8 +98,9 @@ class Buffer:
 
         frame = self.pages_dict[pname]
 
-        if (self.frames[frame] is None):
-            return
+		if (self.frames[frame] is None):
+			del self.pages_dict[pname]
+			return
 
         # If the page is dirty (i.e. it chaged), we write it to disk
         if self.frames[frame].dirty:
