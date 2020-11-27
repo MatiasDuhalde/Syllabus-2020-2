@@ -2,6 +2,11 @@
 
 https://docs.google.com/spreadsheets/d/1PwtaZ1sV77e7VReRNgXZY-3SZJn2jfKI4fSntLNQItg/edit?usp=sharing
 
+## Cambios realizados
+- G3.4, Modificada el 12-11-2020 19:17hrs, se elimina un resultado que era incorrecto
+- G3.3, Modificada el 16-11-2020 08:57hrs, se agregan resultados faltantes
+- G3.3, Modificada el 16-11-2020 10:55hrs, se agregan resultados faltantes
+
 
 # Rúbrica E4
 
@@ -32,3 +37,15 @@ Los puntajes asignados son los siguientes:
   - (4 pts) La búsqueda funciona con los 4 criterios simultáneamente.
 
 - **(12 pts) POST:** el puntaje se divide de la siguiente manera:
+
+  - (12 pts) Si se entregan todos los atributos, es posible crear un nuevo mensaje. Si no se entregan todos los atributos, el mensaje no se crea y se muestra el atributo erróneo
+
+* **(6 pts) DELETE:** el puntaje se divide de la siguiente manera:
+
+  - (6 pts) Es posible eliminar un mensaje existente. Si el ID no existe, la app no se cae.
+
+## Descuentos
+
+- (1 pto) Por subir en carpeta incorrecta.
+
+- (Hasta 1 pto) A juicio del corrector, por trabajos que no estén bien explicados, que cuenten con demasiadas faltas de ortografía o que se dificulte la corrección.
